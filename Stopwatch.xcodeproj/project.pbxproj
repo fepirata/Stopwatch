@@ -58,11 +58,11 @@
 			children = (
 				558A60E221ED6C7100D0FB44 /* AppDelegate.swift */,
 				558A60E421ED6C7100D0FB44 /* ViewController.swift */,
+				558A60F421ED6D7F00D0FB44 /* Stopwatch.swift */,
 				558A60E621ED6C7100D0FB44 /* Main.storyboard */,
 				558A60E921ED6C7300D0FB44 /* Assets.xcassets */,
 				558A60EB21ED6C7300D0FB44 /* LaunchScreen.storyboard */,
 				558A60EE21ED6C7300D0FB44 /* Info.plist */,
-				558A60F421ED6D7F00D0FB44 /* Stopwatch.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";

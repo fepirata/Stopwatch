@@ -21,8 +21,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsc-c7-woL">
                                 <rect key="frame" x="16" y="120" width="343" height="58.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.0" green="0.56264417246403742" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.48187491127533377" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGG-P6-QKR">
                                 <rect key="frame" x="16" y="617" width="34" height="30"/>
@@ -38,9 +38,17 @@
                                     <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUr-cq-goB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgE-jJ-Jyr">
+                                <rect key="frame" x="166.5" y="617" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="koV-yT-GiN"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="kgE-jJ-Jyr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AX4-wb-9Ze"/>
                             <constraint firstItem="Rsc-c7-woL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="AxW-I7-dRb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rsc-c7-woL" secondAttribute="trailing" constant="16" id="LCE-hy-Rae"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NGG-P6-QKR" secondAttribute="bottom" constant="20" id="UzY-4O-ncr"/>
@@ -48,6 +56,7 @@
                             <constraint firstItem="Rsc-c7-woL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cIb-dR-DfF"/>
                             <constraint firstItem="cgX-6K-odI" firstAttribute="centerY" secondItem="NGG-P6-QKR" secondAttribute="centerY" id="h3r-nw-ROD"/>
                             <constraint firstItem="NGG-P6-QKR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qcC-b0-sPc"/>
+                            <constraint firstItem="kgE-jJ-Jyr" firstAttribute="centerY" secondItem="NGG-P6-QKR" secondAttribute="centerY" id="zaG-hZ-RLS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
